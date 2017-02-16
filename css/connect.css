@@ -1,0 +1,184 @@
+*:focus {
+    outline: none;
+}
+
+main{
+  padding-bottom: 4em;
+}
+
+
+main > p, form{
+    animation: fadein 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100%  {
+    opacity: 100%;
+  }
+}
+
+main > h1{
+  padding-bottom: 1.1em;
+  font-size: 2em;
+}
+
+.mobile-aside > h3{
+  font-family: 'Montserrat';
+  letter-spacing: 0.05em;
+}
+
+main > p {
+  float:left;
+  line-height: 1.5em;
+  width: 92%;
+  margin-top: -0.2em;
+}
+
+fieldset{
+  padding-top: 3em;
+  float:left;
+  overflow: auto;
+}
+
+input{
+  background: transparent;
+  border-bottom: white solid 2px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0.75em;
+  padding-left: 0;
+  width: 93%;
+  float:left;
+  margin-bottom: 1.75em;
+  font-size: 0.9em;
+  color:white;
+  font-family: 'Montserrat';
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+textarea{
+  margin: 1.9em 0 2em 0;
+  width: 93%;
+  padding: 0.75em;
+  border: white solid 2px;
+  background: transparent;
+  font-size: 1em;
+  color:white;
+  font-family: 'Montserrat';
+}
+
+input[type="submit"]{
+  background-color: white;
+  border: white;
+  color:#f7a147;
+  letter-spacing: 0.05em;
+  margin-top: 0.3em;
+  padding: 1em 0;
+  transition: 0.3s ease-in-out;
+  font-family: 'Montserrat';
+}
+
+input[type="submit"]:hover{
+  background-color: white;
+  border: white;
+  color:black;
+}
+
+@media (min-width:400px) {
+
+textarea, input, {
+  width: 94%;
+}
+
+main > p{
+    width: 93%;
+}
+
+}
+
+@media (min-width:440px) {
+
+textarea, input {
+  width: 95%;
+}
+
+}
+
+@media (min-width:479px) {
+
+textarea, input {
+  width: 92%;
+}
+
+}
+
+@media (min-width:738px) {
+
+textarea, input, main > p {
+  width: 100%;
+}
+
+main > h1 {
+  font-size: 2.2em;
+  padding-top: 0;
+  padding-top: 0.4em;
+}
+
+input{
+  width: 45%;
+}
+
+.odd{
+  margin-right: 10%;
+}
+
+fieldset{
+  padding-bottom: 4em;
+}
+
+}
+
+@media (min-width:800px) {
+
+main > p, fieldset {
+  width: 95%;
+}
+
+}
+
+@media (min-width:900px) {
+
+main > p, fieldset {
+  width: 90%;
+}
+
+
+}
+
+@media (min-width:1000px) {
+
+main > p, fieldset {
+  width: 590px;;
+}
+
+}

@@ -1,0 +1,622 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Smartphone Layout*/
+
+@media(min-width:0px) and (max-width:3000px){
+
+html{
+  background: #f8a231;
+  font-size: 0.875em;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  margin: 0 auto;
+  font-family:Georgia;
+  overflow: auto;
+  height: 100%;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #f7a147;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: inset 0 0 6px white;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: white;
+}
+
+.wrapper{
+  width:100%;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow: auto;
+  z-index: 100;
+}
+
+.logo{
+  width: 150px;
+  padding: 2em 0 0 1.5em;
+  max-width: 100%;
+}
+
+.background-image-4{
+  width: 9em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.25;
+}
+
+.background-image{
+  width: 320px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.25;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 18px 1.5em 18px 1.3em;
+  display: block;
+  float: right;
+  position: fixed;
+  top: 1.9em;
+  right: 0em;
+  z-index: 1001;
+}
+
+.line {
+  border-bottom: 2.5px solid black;
+  width: 27px;
+  margin-bottom: 6px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+nav {
+  float: right;
+  padding: 2em 0;
+  position: fixed;
+  width: 65%;
+  right: 0;
+  top: 0;
+  background-color: #FDECD9;
+  height: 100%;
+  display: none;
+  overflow: auto;
+  z-index: 1000;
+}
+
+ul{
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+  clear: both;
+  float: right;
+  padding-top: 4.5em;
+}
+
+li {
+  padding: 20px 0;
+  font-family: 'Montserrat';
+  letter-spacing: 0.05em;
+  font-size: 12.5px;
+  }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.drop-down{
+  padding-top: 20px;
+  position: block;
+  display: none;
+}
+
+.drop-down li{
+  font-size: 14.5px;
+  color: #8d8c8c;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}
+
+.drop-down li:last-child {
+  padding-bottom: 2.5em;
+}
+
+.mobile-aside{
+  text-align: center;
+  font-size: 11.5px;
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 2.5em auto 3em;
+}
+
+.mobile-aside > h2{
+  font-family: 'Montserrat';
+  letter-spacing: 0.05em;
+}
+
+.mobile-aside > p {
+  font-family:Georgia;
+  margin: 0.5em 0 2em 0;
+  line-height: 1.4em;
+  font-size: 1.05em;
+}
+
+.mobile-aside > p > em{
+  font-style: italic;
+}
+
+.mobile-social {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 0.2em 0 1em 0;
+}
+
+.mobile-social > a{
+  display: inline-block;
+  margin: 0 0.35em;
+}
+
+aside {
+  display: none;
+}
+
+main {
+  width: 100%;
+  margin: 3em auto;
+  overflow: auto;
+  padding-left: 1.5em;
+  padding-bottom: 2em;
+}
+
+.border-line{
+  width:2.75em;
+  height: 0.2em;
+  background-color:white;
+}
+
+h1{
+  animation: slide 0.9s ease-in-out;
+  padding-top: 0.2em;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: white;
+  text-align: left;
+}
+
+@keyframes slide {
+0% {
+  opacity: 0;
+  transform: translateY(0.2em);
+}
+
+100%  {
+  opacity: 100%;
+  transform: translateY(0em);
+}
+}
+
+.home{
+  padding-top: 0.6em;
+  width: 85%;
+}
+
+.header {
+  font-size: 2.5em;
+  padding-top: 0.1em;
+}
+
+.social-media{
+  display: none;
+}
+
+footer{
+  font-family: Georgia;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 2em;
+  left: 1.75em;
+  z-index: 0;
+}
+
+footer .social-media{
+  display:none;
+}
+
+}
+
+@media (min-width:360px) {
+
+.home{
+  font-size: 1.6em;
+  line-height: 1.7em;
+}
+
+.background-image{
+  width: 340px;
+}
+
+.background-image-4{
+  width: 10em;
+}
+}
+
+@media (min-width:411px) {
+
+nav{
+  width: 60%;
+}
+
+.home{
+  font-size: 1.7em;
+  line-height: 1.7em;
+  width: 85%;
+}
+
+}
+
+@media (min-width:479px){
+
+.logo{
+  margin-left: 1em;
+}
+
+.hamburger{
+  margin-right: 1em;
+}
+
+main{
+  padding-left: 2.75em;
+}
+
+footer{
+  left: 3.5em;
+}
+
+}
+
+@media (min-width:536px){
+
+.home{
+  width: 77%;
+}
+
+nav{
+  width: 55%;
+}
+
+}
+
+@media (min-width:700px){
+
+.background-image{
+  width: 370px;
+}
+
+.background-image-4{
+  width: 11em;
+  left: 1em;
+}
+
+}
+
+@media (min-width:720px){
+
+.home{
+  width: 70%;
+}
+
+}
+
+/* Smartphone Layout*/
+
+/* Wide Layout*/
+
+@media (min-width:738px){
+
+body{
+  width: 100%;
+}
+
+.wrapper{
+    width: 87%;
+}
+
+.logo{
+  padding: 8% 0 0 0;
+  margin: 0;
+}
+
+.hamburger, .mobile-aside, .mobile-social{
+  display: none;
+}
+
+nav{
+  display: inline-block;
+  background: none;
+  height: auto;
+  padding-top: 0.5em;
+  margin: 0;
+  width:100%;
+  position: absolute;
+}
+
+ul{
+  text-align: right;
+  margin: 0;
+  padding: 9% 0 0 0;
+}
+
+ul > li{
+  display: inline-block;
+  height: auto;
+  padding-left: 3.5em;
+  font-size: 0.9em;
+}
+
+nav ul li a {
+ position: relative;
+ color: black;
+}
+
+nav ul li a:after {
+ content: "";
+ display: inline-block;
+ position: absolute;
+ left: 0px;
+ bottom: 22px;
+ background-color: white;
+ width: 0;
+ height: 3px;
+ transition: all 0.3s ease-in-out;
+ animation-fill-mode: forwards;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+aside{
+  display: block;
+  width: 30%;
+  float: left;
+  padding: 4em 0 0 0;
+  margin: 0;
+}
+
+.aside-sections{
+  padding-bottom: 2.5em;
+}
+
+.aside-heading{
+  font-family: 'Montserrat';
+  font-size: 0.875em;
+  padding-bottom: 0.5em;
+  letter-spacing: 0.02em;
+}
+
+.aside-info{
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+em{
+  font-style: italic;
+}
+
+main{
+  width: auto;
+  padding:3.9em 0 5em 0;
+  margin: 0;
+  max-height: 100%;
+}
+
+.home{
+  width: 400px;
+  line-height: 1.8em;
+  font-size: 1.5em;
+}
+
+.header {
+  font-size: 2.5em;
+  padding-top: 0.25em;
+}
+
+h1{
+padding-top: 0.5em;
+}
+
+.border-line{
+  height:0.25em;
+}
+
+.social-media{
+  bottom: 2em;
+  font-size: 1.4em;
+  left: 30%;
+  display: block;
+  position: absolute;
+}
+
+.social-media > a{
+  margin-right: 0.5em;
+}
+
+footer{
+  left: 0;
+  font-size: 0.8em;
+  bottom: 3.5em;
+  float:left;
+  position: absolute;
+}
+
+a{
+  transition:0.35s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+a:hover{
+  color:white;
+}
+
+}
+
+@media (min-width:770px){
+
+aside{
+  width: 28.5%;
+}
+
+.social-media{
+  left: 28.5%;
+}
+
+}
+
+@media (min-width:800px){
+
+.background-image{
+  width: 390px;
+}
+
+}
+
+
+@media (min-width:900px){
+
+aside{
+  width: 26.5%;
+}
+
+.social-media{
+  left: 26.5%;
+}
+
+.background-image-4{
+  left: 0.5em;
+}
+
+}
+
+@media (min-height:850px){
+.wrapper{
+  padding-top: 2em;
+}
+
+.main-menu{
+  padding-top: 2.3em;
+}
+}
+
+@media (min-width:1000px){
+
+.home{
+  width: 450px;
+  font-size: 1.6em;
+}
+
+aside{
+  width: 24%;
+}
+
+.social-media{
+  left: 24%;
+}
+
+.background-image{
+  width: 410px;
+}
+
+.background-image-4{
+  width: 12em;
+}
+
+}
+
+@media (min-width:1100px){
+
+aside{
+  width: 21%;
+}
+
+.social-media{
+  left: 21%;
+}
+
+.background-image{
+  width: 430px;
+}
+
+.background-image-4{
+  width: 13em;
+}
+
+}
+
+@media (min-width:1200px){
+
+.background-image{
+  width: 450px;
+}
+
+.background-image-4{
+  width: 14em;
+}
+
+nav{
+  padding-top: 0.4em;
+}
+
+}
+
+@media (min-width: 1280px){
+
+body{
+  max-width: 1280px;
+}
+
+.background-image{
+  width: 470px;
+}
+
+.background-image-4{
+  width: 15em;
+}
+
+}

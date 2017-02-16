@@ -1,0 +1,13 @@
+.wide-menu > ul > li {
+  animation: fadein 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100%  {
+      opacity: 100%;
+    }
+}
